@@ -1,8 +1,13 @@
+import { ThemeProvider } from "styled-components"
+import { GlobalStyle } from "./styles/global"
+import { defaultTheme } from "./styles/theme/default"
+
 function App() {
   return (
-    <div>
-      Olá, mundo
-    </div>
+    <ThemeProvider theme={defaultTheme}>
+      <GlobalStyle />
+      <h1>ola</h1>
+    </ThemeProvider>
   )
 }
 
